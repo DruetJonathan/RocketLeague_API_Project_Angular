@@ -1,6 +1,42 @@
-@import '../../shared/sharedStyle.scss';
+//@import '../../shared/sharedStyle.scss';
 body{
   width: 100vw;
   overflow: hidden;
-  background: $cambridgeBlue;
+  background: #7d938a;
+  padding: 20px;
+  height: 90vh;
+  z-index:-1;
+}
+/* Style de la table */
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.item-table th,
+.item-table td {
+  padding: 12px 0px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.item-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.item-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.item-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+.item-table td {
+  cursor: pointer;
 }

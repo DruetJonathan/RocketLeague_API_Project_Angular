@@ -1,3 +1,29 @@
 <body>
-deza
+<section>
+  <table class="item-table">
+    <thead>
+    <tr>
+      <th>Item Name</th>
+      <th>Certification Set</th>
+      <th>Color Set</th>
+      <th>Quality Set</th>
+      <th>Platforms Set</th>
+      <th>Type Set</th>
+      <th>Average Price</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of itemArray" (click)="navigateTo('/item/'+item.id)">
+        <td>{{item.itemName}}</td>
+        <td>{{item.certificationSet[0].nameCertification}}</td>
+        <td>{{item.colorSet[0].nameColor}}</td>
+        <td>{{item.qualitySet[0].nameQuality}}</td>
+        <td>{{item.platefromsSet[0].namePlateform}}</td>
+        <td>{{item.typeSet[0].nameType}}</td>
+        <td>{{item.averagePrice}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 </body>
